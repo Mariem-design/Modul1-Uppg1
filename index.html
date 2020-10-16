@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //uppgift 1
+      let fruit = "apple";
+      var number = 4;
+      const car = "saab";
+      console.log(fruit, number, car);
+
+      //uppgift 2
+      let x = true;
+      let num = 8;
+      let string = "tiger";
+      let animal = {};
+      let animals = ["tiger", "horse", "dog"];
+      console.log(x, num, string, animal, animals);
+
+      //uppgift 3
+      function sum1(number1, number2) {
+        return number + number;
+      }
+      let sum = sum1(8, 10);
+
+      console.log("summan blir:" + sum);
+
+      // The function returns the sum of number and number
+      let sum2 = 18;
+
+      //uppgift 4
+      let today = new Date();
+      console.log(today);
+
+      //uppgift 5
+      let jeans = {
+        type: "flare",
+        model: "100",
+        color: "blue",
+        print: function () {
+          console.log(this.type, this.model, this.color);
+        },
+      };
+
+      //uppgift 6
+      let numbers = [4, 8, 15, 16, 23, 42];
+      console.log(numbers);
+
+      const result = numbers.filter((number) => number < 20);
+      console.log(result);
+
+      const map = result.map((x) => x * 2);
+
+      console.log(map);
+      map.forEach((element) => console.log(element));
+
+      //  - På resultatet av föregånde operation, använd 'map' för att dubblera alla värden.
+      //- På resultatet av föregånde operation, använd 'forEach' för att logga ut alla värden vad för sig.
+
+      //uppgift 7
+
+      let text = "";
+      let i = 0;
+
+      while (i < 6) {
+        i++;
+
+        if (i <= 3) {
+          text = "loop:" + i;
+        } else {
+          text = "almost done...";
+        }
+        console.log(text);
+      }
+      console.log("done");
+    </script>
+  </body>
+</html>
